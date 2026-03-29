@@ -68,11 +68,11 @@ export default function Home() {
             <div className="space-y-3">
               <SiteLogo />
               <p className="text-2xl font-semibold tracking-tight text-success sm:text-3xl lg:text-4xl">
-                FunversarialCV
+                Funversarial
               </p>
               <p className="max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
-                Adversarial CV egg-injection console for LLM-driven hiring
-                workflows.
+                Research lab and portfolio—applied AI security, adversarial
+                evaluation, and live demos where available.
               </p>
             </div>
             <h1 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">

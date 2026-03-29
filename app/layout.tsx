@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | Funversarial",
   },
   description:
-    "Solutions Architect and Technical Leader securing the frontier of applied AI—enterprise frameworks for ML supply chain security and prompt injection mitigation.",
+    "Funversarial—research lab and portfolio for applied AI security and adversarial evaluation. Solutions Architect and Technical Leader with 20+ years in global financial and insurance security.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     siteName: "Funversarial",
     title: "Elroi Luria | Securing the Frontier of Applied AI",
     description:
-      "Solutions Architect and Technical Leader with 20+ years delivering security technologies for global financial and insurance sectors.",
+      "Research lab and portfolio for applied AI security—live demos where available. Solutions Architect and Technical Leader, 20+ years in financial and insurance security.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Elroi Luria | Funversarial",
     description:
-      "Solutions Architect and Technical Leader securing the frontier of applied AI.",
+      "Funversarial lab and portfolio—applied AI security, adversarial evaluation, live demos where available.",
   },
 };
 

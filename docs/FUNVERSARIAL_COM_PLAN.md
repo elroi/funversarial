@@ -27,6 +27,10 @@ isProject: false
 
 > **Paths:** Links like `frontend/app/globals.css` and `docs/brand-guide.json` resolve in **this** (FunversarialCV) repo. When you copy this file into the **lobby** repo, treat those paths as reference-only—use a second Cursor window on FunversarialCV or paste files into chat.
 
+## Positioning (live site)
+
+The apex domain **funversarial.com** is framed as an **umbrella** brand (Funversarial lab / portfolio). The **Funversarial CV** interactive demo is one **featured research** card with its own description and **Launch Demo** CTA—not the primary site title in the hero. Visual tokens stay aligned with the CV app by reference (shared look, separate deploy).
+
 ## Personas and user stories
 
 | Persona                        | User story                                                                                                                                                                        |

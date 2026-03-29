@@ -30,10 +30,13 @@ describe("Home (lobby)", () => {
       screen.getByText(/treating a complex system or security challenge/i),
     ).toBeInTheDocument();
 
-    expect(screen.getByText("FunversarialCV")).toBeInTheDocument();
+    expect(screen.getByText("Funversarial", { exact: true })).toBeInTheDocument();
     expect(
-      screen.getByText(/egg-injection console for LLM-driven hiring/i),
+      screen.getByText(
+        /Research lab and portfolio—applied AI security, adversarial evaluation, and live demos where available/i,
+      ),
     ).toBeInTheDocument();
+    expect(screen.queryByText("FunversarialCV")).not.toBeInTheDocument();
 
     expect(
       screen.getByRole("heading", { level: 3, name: "Funversarial CV" }),
