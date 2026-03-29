@@ -1,3 +1,4 @@
+import { FunversarialDefinition } from "@/components/funversarial-definition";
 import { MotionSection } from "@/components/motion-section";
 import { SiteLogo } from "@/components/site-logo";
 import { getCvAppUrl } from "@/lib/cv-app-url";
@@ -88,6 +89,10 @@ export default function Home() {
               resilient enterprise frameworks.
             </p>
           </header>
+        </MotionSection>
+
+        <MotionSection delay={0.03}>
+          <FunversarialDefinition />
         </MotionSection>
 
         <section aria-labelledby="research-heading">

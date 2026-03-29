@@ -1,10 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
+  display: "swap",
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body-sans",
   display: "swap",
 });
 
@@ -47,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jetbrainsMono.variable} noir-shell min-h-dvh-screen bg-background font-mono text-foreground`}
+        className={`${jetbrainsMono.variable} ${playfairDisplay.variable} ${inter.variable} noir-shell min-h-dvh-screen bg-background font-mono text-foreground`}
       >
         <a
           href="#main-content"

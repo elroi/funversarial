@@ -23,6 +23,13 @@ describe("Home (lobby)", () => {
       }),
     ).toBeInTheDocument();
 
+    expect(
+      screen.getByRole("heading", { level: 2, name: "funversarial" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/treating a complex system or security challenge/i),
+    ).toBeInTheDocument();
+
     expect(screen.getByText("FunversarialCV")).toBeInTheDocument();
     expect(
       screen.getByText(/egg-injection console for LLM-driven hiring/i),

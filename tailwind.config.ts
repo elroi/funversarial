@@ -15,6 +15,13 @@ const config: Config = {
         /* CV parity: single monospace stack site-wide */
         sans: ["var(--font-mono)", "ui-monospace", "monospace"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+        "body-sans": [
+          "var(--font-body-sans)",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       colors: {
         /* FunversarialCV semantic tokens */
