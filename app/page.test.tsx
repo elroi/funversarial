@@ -1,3 +1,4 @@
+import { GITHUB_URL, LINKEDIN_URL } from "@/lib/links";
 import { render, screen } from "@testing-library/react";
 import Home from "./page";
 
@@ -79,10 +80,21 @@ describe("Home (lobby)", () => {
     expect(demo).toHaveAttribute("rel", "noopener noreferrer");
   });
 
-  it("shows placeholder messaging for PDF and social links when TODOs are unset", () => {
+  it("shows CV PDF coming soon and wires GitHub and LinkedIn when configured", () => {
     process.env.NEXT_PUBLIC_CV_APP_URL = "https://lobby-test-cv.example";
     render(<Home />);
     expect(screen.getByText("CV (PDF) coming soon")).toBeInTheDocument();
-    expect(screen.getByText("GitHub (coming soon)")).toBeInTheDocument();
+
+    const githubLinks = screen.getAllByRole("link", { name: /^GitHub$/i });
+    expect(githubLinks[0]).toHaveAttribute("href", GITHUB_URL);
+
+    const heroCta = screen.getByRole("link", {
+      name: /Discuss Resilient AI Systems/i,
+    });
+    expect(heroCta).toHaveAttribute("href", LINKEDIN_URL);
+    expect(heroCta).toHaveAttribute("target", "_blank");
+
+    const footerLinkedIn = screen.getByRole("link", { name: /^LinkedIn$/i });
+    expect(footerLinkedIn).toHaveAttribute("href", LINKEDIN_URL);
   });
 });

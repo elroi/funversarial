@@ -88,6 +88,18 @@ export default function Home() {
               model supply chain security and prompt injection mitigation—into
               resilient enterprise frameworks.
             </p>
+            <div className="pt-2">
+              {linkedinReady ? (
+                <ExternalLink
+                  href={LINKEDIN_URL}
+                  className={`inline-flex min-h-11 items-center justify-center rounded-md border-2 border-accent bg-accent/5 px-5 py-3 text-sm font-semibold text-accent shadow-[0_0_24px_rgba(0,212,255,0.12)] transition hover:border-success hover:bg-success/10 hover:text-success hover:shadow-[0_0_28px_rgba(0,255,65,0.14)] ${focusLinkClass}`}
+                >
+                  Discuss Resilient AI Systems
+                </ExternalLink>
+              ) : (
+                <ComingSoon label="Discuss Resilient AI Systems (soon)" />
+              )}
+            </div>
           </header>
         </MotionSection>
 
