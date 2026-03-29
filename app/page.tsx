@@ -1,4 +1,5 @@
 import { MotionSection } from "@/components/motion-section";
+import { SiteLogo } from "@/components/site-logo";
 import { getCvAppUrl } from "@/lib/cv-app-url";
 import {
   GITHUB_URL,
@@ -64,7 +65,7 @@ export default function Home() {
         <MotionSection>
           <header className="space-y-6">
             <div className="space-y-3">
-              <p className="text-sm text-accent">funversarial.com</p>
+              <SiteLogo />
               <p className="text-2xl font-semibold tracking-tight text-success sm:text-3xl lg:text-4xl">
                 FunversarialCV
               </p>
