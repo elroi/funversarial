@@ -3,7 +3,7 @@ export const PDF_HREF = "TODO_PDF_URL_OR_PUBLIC_FILE";
 
 export const GITHUB_URL = "https://elroi.github.io";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/elroiluria/";
-export const PROJECT_REPO_URL = "TODO_PROJECT_REPO_URL";
+export const PROJECT_REPO_URL = "https://cv.funversarial.com/";
 
 export function isPlaceholderHref(value: string): boolean {
   const v = value.trim();

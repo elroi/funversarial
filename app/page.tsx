@@ -1,3 +1,4 @@
+import { ExperienceDiscovery } from "@/components/experience-discovery";
 import { FunversarialDefinition } from "@/components/funversarial-definition";
 import { MotionSection } from "@/components/motion-section";
 import { SiteLogo } from "@/components/site-logo";
@@ -76,17 +77,14 @@ export default function Home() {
               </p>
             </div>
             <h1 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              Securing the Frontier of Applied AI.
+              Architecting Resilient AI Systems.
             </h1>
             <p className="max-w-3xl text-lg leading-relaxed text-muted sm:text-xl">
-              I am Elroi Luria, a Solutions Architect and Technical Leader with
               20+ years of experience delivering disruptive security
-              technologies for the global financial and insurance sectors.
-            </p>
-            <p className="max-w-3xl text-base leading-relaxed text-foreground/90 sm:text-lg">
-              Translating complex frontier AI safety challenges—including ML
-              model supply chain security and prompt injection mitigation—into
-              resilient enterprise frameworks.
+              technologies for the global financial and insurance sectors. Now
+              applying a career&apos;s worth of defensive architecture and
+              incident response to the critical task of building resilient,
+              safe-by-design AI frameworks.
             </p>
             <div className="pt-2">
               {linkedinReady ? (
@@ -188,34 +186,9 @@ export default function Home() {
           </ul>
         </section>
 
-        <section aria-labelledby="trust-heading">
-          <MotionSection delay={0.08}>
-            <h2
-              id="trust-heading"
-              className="text-sm font-medium uppercase tracking-wider text-accent"
-            >
-              Trust bar
-            </h2>
-            <ul className="mt-6 space-y-4 border-y border-accent/25 py-8">
-              <li className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
-                <span className="font-semibold text-foreground">Citi</span>
-                <span className="text-muted">Cyber Security Innovation Lead</span>
-              </li>
-              <li className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
-                <span className="font-semibold text-foreground">PayPal</span>
-                <span className="text-muted">Senior Incident Response</span>
-              </li>
-              <li className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
-                <span className="font-semibold text-foreground">
-                  Harel Insurance
-                </span>
-                <span className="text-muted">
-                  Full-Lifecycle Security Engineering
-                </span>
-              </li>
-            </ul>
-          </MotionSection>
-        </section>
+        <MotionSection delay={0.08}>
+          <ExperienceDiscovery />
+        </MotionSection>
       </main>
 
       <footer className="mt-auto border-t border-accent/25 pt-12">

@@ -13,14 +13,14 @@ describe("Home (lobby)", () => {
     }
   });
 
-  it("renders hero, research cards, trust bar, and specimen block", () => {
+  it("renders hero, research cards, experience section, and specimen block", () => {
     process.env.NEXT_PUBLIC_CV_APP_URL = "https://lobby-test-cv.example";
     render(<Home />);
 
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: /Securing the Frontier of Applied AI/i,
+        name: /Architecting Resilient AI Systems/i,
       }),
     ).toBeInTheDocument();
 
@@ -55,9 +55,24 @@ describe("Home (lobby)", () => {
       }),
     ).toBeInTheDocument();
 
+    expect(
+      screen.getByRole("heading", {
+        level: 2,
+        name: /20\+ Years of Engineering Resilience & Discovery/i,
+      }),
+    ).toBeInTheDocument();
     expect(screen.getByText("Citi")).toBeInTheDocument();
     expect(screen.getByText("PayPal")).toBeInTheDocument();
-    expect(screen.getByText("Harel Insurance")).toBeInTheDocument();
+    expect(screen.getByText("Harel")).toBeInTheDocument();
+    expect(
+      screen.getByText(/Multidisciplinary Architectural Discovery/i),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/Defensive Resilience: Leading high-stakes response/i),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/Foundational Discovery: Translating complex regulatory/i),
+    ).toBeInTheDocument();
 
     expect(
       screen.getByRole("heading", { name: /terminal log/i }),

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://funversarial.com",
     siteName: "Funversarial",
-    title: "Elroi Luria | Securing the Frontier of Applied AI",
+    title: "Elroi Luria | Architecting Resilient AI Systems",
     description:
       "Research lab and portfolio for applied AI security—live demos where available. Solutions Architect and Technical Leader, 20+ years in financial and insurance security.",
   },
